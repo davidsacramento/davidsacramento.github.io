@@ -1,0 +1,76 @@
+/* add your CSS here */
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.2em;
+  }
+  .data-caption {
+    font-weight: 900;
+  }
+  ul {
+    list-style: none;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 10px 0;
+  }
+  .animal-card-border {
+    margin: 10px 10px -5px;
+  }
+  .background {
+    background: #CFD8DC;
+  }
+  .orange-background {
+    background: #E8EAF6;
+  }
+  .content {
+    width: 550px;
+    border: 10px solid #aaa;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 20px #555;
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSQwYRpC7tZ5QwuMfZqJUuRPjA76EaqKsJkohPMMtLiOmMhrF_DpXwvBKxH6AtaD4nBQoKos9ry6GZa_pBkJQGLNg);
+  }
+  h3 {
+    padding: 10px 0 8px 10px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius:10px;
+    font-size: 1.5em;
+    color: #000;
+  }
+  .animal-info {
+    padding: 10px;
+    padding-bottom: 10px;
+    margin-top: 300px;
+    margin-bottom: 10px;
+    border-radius:10px;
+    background-color: white;
+  }
+  .interesting-facts {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  
+  .slanted-edge {
+    --p: 70px; /* control the shape (can be percentage) */
+    width: 525px;
+    height: 100px;
+    aspect-ratio: 1;
+    clip-path: polygon(0 0,100% 0,100% calc(100% - var(--p)),0 100%);
+  }
+  
+  /* HTML: <div class="vertical-rounded-tab"></div> */
+  .vertical-rounded-tab {
+    --r: 30px; /* control the radius */
+  
+    line-height: 1.7; /* control the height */
+    padding-inline: .5em;
+    border-bottom: var(--r) solid #0000;
+    border-radius: var(--r)/0 var(--r) calc(2*var(--r)) 0;
+    mask: 
+      radial-gradient(var(--r) at 100% 100%,#0000 98%,#000 101%)
+        0 100%/var(--r) 100% no-repeat,
+      conic-gradient(#000 0 0) padding-box;
+    background: #aaa border-box; /* border-box is needed for a gradient coloration */
+    width: fit-content;
+  }
